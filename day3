@@ -67,3 +67,48 @@ int main()
     printf("min : %d",min);
     printf("\nmax : %d",max);
 }
+matrix addition
+
+#include <stdio.h>
+
+int main()
+{
+    int i,j,n,m;
+    printf("enter the row size:");
+    scanf("%d",&n);
+    printf("enter the column size:");
+    scanf("%d",&m);
+    int arr[n][m],arr1[n][m],sum[n][m];
+    printf("array1\n");
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<m;j++)
+        {
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    printf("array2\n");
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<m;j++)
+        {
+            scanf("%d",&arr1[i][j]);
+        }
+    }
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<m;j++)
+        {
+            sum[i][j]=arr[i][j]+arr1[i][j];
+        }
+    }
+    printf("sum of array");
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<m;j++)
+        {
+            printf("%d ",sum[i][j]);
+        }
+        printf("\n");
+    }
+}
