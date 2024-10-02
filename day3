@@ -16,3 +16,28 @@ int main()
     printf("sum = %d",sum);
     printf("\nproduct = %d",product);
 }
+
+odd & even
+
+#include <stdio.h>
+
+int main()
+{
+    int n,i,so=0,se=0;
+    printf("enter the number:");
+    scanf("%d",&n);
+    int a[n];
+    for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++){
+        if((i+1)%2==0){
+            se+=a[i];
+        }
+        else{
+            so+=a[i];
+        }
+    }
+    printf("sum of odd:%d",so);
+    printf("\nsum of even:%d",se);
+}
