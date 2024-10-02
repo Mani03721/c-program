@@ -1,0 +1,18 @@
+sum  & product
+
+#include <stdio.h>
+
+int main()
+{
+    int n,i,product=1,sum=0;
+    printf("enter the number:");
+    scanf("%d",&n);
+    int a[n];
+    for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
+        sum+=a[i];
+        product*=a[i];
+    }
+    printf("sum = %d",sum);
+    printf("\nproduct = %d",product);
+}
